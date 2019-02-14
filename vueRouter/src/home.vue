@@ -7,6 +7,7 @@
         <p>
             我是home组件{{this.$route.query.a}}
         </p>
+        <p>{{$store.state.user.aArg}}</p>
         <router-view></router-view>
     </div>
 </template>

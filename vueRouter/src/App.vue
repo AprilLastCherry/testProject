@@ -9,6 +9,7 @@
       <router-link to="/user/456">User456</router-link>
     </header>
     <router-view></router-view>
+    <p>我是Vuex{{$store.state.user.aArg}}</p>
   </div>
 </template>
 
