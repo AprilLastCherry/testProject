@@ -9,7 +9,26 @@ Vue.use(VueRouter);
 const routes=[
     {
         path:"/home",
-        component:home
+        name:"home",
+        component:home,
+        // children:[
+        //     {
+        //         path:'phone',
+        //         component:phone
+        //     },
+        //     {
+        //         path:'tablet',
+        //         component:tablet
+        //     },
+        //     {
+        //         path:'computer',
+        //         component:computer
+        //     },
+        //     {
+        //         path:'',
+        //         component:phone
+        //     }
+        // ]
     },
     {
         path:'/about',

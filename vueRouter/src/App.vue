@@ -2,7 +2,8 @@
   <div id="app">
     <img src="./assets/logo.png">
     <header>
-      <router-link to="/home">Home</router-link>
+      <!-- <router-link to="/home">Home</router-link> -->
+      <p @click="toHome">click</p>
       <router-link to="/about">About</router-link>
       <router-link to="/user/123">User123</router-link>
       <router-link to="/user/456">User456</router-link>
@@ -13,7 +14,20 @@
 
 <script>
 export default {
-
+  data(){
+    return {
+      args:{
+        a:"afgddffd",
+        b:"b",
+        c:123
+      }
+    }
+  },
+  methods:{
+    toHome(){
+      this.$router.push({path:'/home',query:this.args})
+    }
+  }
 }
 </script>
 
