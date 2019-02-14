@@ -4,6 +4,8 @@
     <header>
       <router-link to="/home">Home</router-link>
       <router-link to="/about">About</router-link>
+      <router-link to="/user/123">User123</router-link>
+      <router-link to="/user/456">User456</router-link>
     </header>
     <router-view></router-view>
   </div>
@@ -11,7 +13,7 @@
 
 <script>
 export default {
-  
+
 }
 </script>
 
